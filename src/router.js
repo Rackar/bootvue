@@ -8,8 +8,33 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "main",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "main" */ "./views/Main.vue"),
+      redirect: "first",
+      children: [
+        {
+          path: "first",
+          name: "first",
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () =>
+            import(/* webpackChunkName: "first" */ "./views/first/first.vue")
+        },
+        {
+          path: "secend",
+          name: "secend",
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () =>
+            import(/* webpackChunkName: "first" */ "./views/secend/secend.vue")
+        }
+      ]
     },
     {
       path: "/about",
@@ -21,12 +46,13 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/Main",
-      name: "main",
+      path: "/home",
+      name: "home",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "main" */ "./views/Main.vue")
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Home.vue")
     }
   ]
 });

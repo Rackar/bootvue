@@ -1,15 +1,17 @@
 <template>
   <div class="about">
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">首页</b-navbar-brand>
+      <!-- <b-navbar fixed="top" toggleable="lg" type="dark" variant="info"> -->
+      <b-navbar-brand to="/">首页</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">文章</b-nav-item>
-          <b-nav-item href="#">程序</b-nav-item>
-          <b-nav-item href="#">关于</b-nav-item>
+          <b-nav-item to="/first">文章</b-nav-item>
+          <b-nav-item to="/secend">程序</b-nav-item>
+          <b-nav-item to="/about">关于</b-nav-item>
+          <b-nav-item to="/home">测试</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -34,9 +36,9 @@
 
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
-            <template slot="button-content"
-              ><em>User</em></template
-            >
+            <template slot="button-content">
+              <em>User</em>
+            </template>
             <b-dropdown-item href="#">Profile</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>

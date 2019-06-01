@@ -1,12 +1,12 @@
 <template>
-  <div>about</div>
+  <div>2</div>
 </template>
 
 <script>
-import navTop from "./nav_top.vue";
+// import navTop from "./nav_top.vue";
 export default {
   components: {
-    navTop
+    // navTop
   }
 };
 </script>
