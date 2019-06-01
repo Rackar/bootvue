@@ -217,18 +217,18 @@ export default {
 </script>
 <style></style>
 <style lang="scss">
-.bv-example-row {
-  &.bv-example-row-flex-cols {
-    .row {
-      height: 100px;
-      border: 2px red dotted;
-    }
-  }
-  background-color: bisque;
-  .row {
-    div {
-      border: 1px solid grey;
-    }
-  }
-}
+// .bv-example-row {
+//   &.bv-example-row-flex-cols {
+//     .row {
+//       height: 100px;
+//       border: 2px red dotted;
+//     }
+//   }
+//   background-color: bisque;
+//   .row {
+//     div {
+//       border: 1px solid grey;
+//     }
+//   }
+// }
 </style>
