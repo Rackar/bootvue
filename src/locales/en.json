@@ -1,0 +1,18 @@
+{
+  "message": {
+    "hello": "hello world"
+  },
+  "menu": {
+    "main-title": "CodingYang",
+    "article": "Article",
+    "about": "About",
+    "app": "App",
+    "lang": "Lang",
+    "config": "Admin",
+    "me": "my profile",
+    "signout": "log out",
+    "test": "Test",
+    "search": "Search",
+    "keyword": "Keyword"
+  }
+}

@@ -62,24 +62,24 @@ export default {
     text-align: left;
     width: 72%;
     margin: 1%;
-    .b-row {
-      .b-col {
-        display: inline-block;
-        border-top: 1px;
-        border-bottom: 1px;
-        font-size: 20px;
-        .title {
-          font-family: Arial, Helvetica, sans-serif;
-          background-color: rgb(225, 236, 236);
-          border-radius: 5px;
-          padding: 1px 4px;
-          font-weight: bold;
-        }
-      }
-      .content {
-        //   border:1px solid gray;
-        display: inline-block;
-      }
+
+    display: inline-block;
+    border-top: 1px;
+    border-bottom: 1px;
+    font-size: 16px;
+    .title {
+      font-family: Arial, Helvetica, sans-serif;
+      // font-weight: 400;
+      // background-color: rgb(225, 236, 236);
+      border-radius: 5px;
+      padding: 1px 4px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .content {
+      //   border:1px solid gray;
+      display: inline-block;
     }
   }
 }

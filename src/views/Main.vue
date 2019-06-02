@@ -4,9 +4,9 @@
       <navTop></navTop>
 
       <b-row>
-        <b-col md="2">导航</b-col>
-        <b-col>
-          <router-view />
+        <!-- <b-col md="2">导航</b-col> -->
+        <b-col class="mainPage">
+          <router-view/>
         </b-col>
       </b-row>
     </b-container>
@@ -22,4 +22,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.mainPage {
+  margin-top: 70px;
+}
+</style>

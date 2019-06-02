@@ -1,0 +1,18 @@
+{
+  "message": {
+    "hello": "你好"
+  },
+  "menu": {
+    "main-title": "码农杨首页",
+    "article": "文章",
+    "about": "关于",
+    "app": "程序",
+    "lang": "Lang",
+    "config": "管理",
+    "me": "个人",
+    "signout": "登出",
+    "test": "测试",
+    "search": "搜索",
+    "keyword": "关键词"
+  }
+}

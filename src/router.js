@@ -26,13 +26,34 @@ export default new Router({
             import(/* webpackChunkName: "first" */ "./views/first/first.vue")
         },
         {
-          path: "secend",
-          name: "secend",
+          path: "article",
+          name: "article",
           // route level code-splitting
           // this generates a separate chunk (about.[hash].js) for this route
           // which is lazy-loaded when the route is visited.
           component: () =>
-            import(/* webpackChunkName: "first" */ "./views/secend/secend.vue")
+            import(
+              /* webpackChunkName: "first" */ "./views/article/article.vue"
+            )
+        },
+
+        {
+          path: "app",
+          name: "app",
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () =>
+            import(/* webpackChunkName: "first" */ "./views/app/app.vue")
+        },
+        {
+          path: "person",
+          name: "person",
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () =>
+            import(/* webpackChunkName: "first" */ "./views/person/person.vue")
         }
       ]
     },
