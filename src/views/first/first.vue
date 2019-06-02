@@ -4,13 +4,25 @@
       <b-row>
         <b-col>
           <b-jumbotron>
-            <template slot="header">我是谁</template>
+            <template slot="header"
+              ><b-img
+                src="/img/bg.jpg"
+                rounded="circle"
+                alt="Circle image"
+                width="200"
+              ></b-img>
+              <div>我是谁</div>
+            </template>
 
-            <template slot="lead">杨旭，注册测绘师，测绘高级工程师，业余码农。</template>
+            <template slot="lead"
+              >杨旭，注册测绘师，测绘高级工程师，业余码农。</template
+            >
 
-            <hr class="my-4">
+            <hr class="my-4" />
 
-            <p>贪多嚼不烂，什么都喜欢。写过前端vue.js，用过数据库PostgreSQL,MongoDB，引擎Unity,Cocos</p>
+            <p>
+              兴趣多而杂，什么都喜欢。前端vue.js，后台node.js、python、C#，数据库PostgreSQL,MongoDB，开发引擎Unity,Cocos
+            </p>
 
             <b-button variant="primary" class="mx-2" href="https://blog.csdn.net/henjuewang">CSDN</b-button>
             <b-button
@@ -22,7 +34,7 @@
         </b-col>
       </b-row>
 
-      <soft v-for="x in mysoft" :soft="x" :key="x.id"/>
+      <soft v-for="x in mysoft" :soft="x" :key="x.id" />
     </b-container>
   </div>
 </template>
