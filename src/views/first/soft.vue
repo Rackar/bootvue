@@ -1,18 +1,18 @@
 <template>
   <div class="soft">
     <div class="left">
-      <img :src="soft.img_url" alt />
+      <img :src="soft.img_url" alt>
     </div>
     <div class="right">
-      <el-row type="flex" class="row-bg" justify="space-around">
-        <el-col :span="8">
+      <b-row type="flex" class="row-bg" justify="space-around">
+        <b-col :span="8">
           <span class="title">{{ soft.name }}</span>
-        </el-col>
-        <el-col :span="8">{{ soft.type }}</el-col>
-        <el-col :span="8">
-          <el-link :href="soft.link" target="_blank">链接地址</el-link>
-        </el-col>
-      </el-row>
+        </b-col>
+        <b-col :span="8">{{ soft.type }}</b-col>
+        <b-col :span="8">
+          <b-link :href="soft.link" target="_blank">链接地址</b-link>
+        </b-col>
+      </b-row>
       <div class="content">{{ soft.content }}</div>
     </div>
   </div>
@@ -25,11 +25,10 @@ export default {
       type: Object,
       default() {
         return {
-          name: "软件名称",
-          type: "网页",
-          link: "http://sdfjlsdf",
-          content:
-            "软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。软件详细介绍。",
+          name: "",
+          type: "页",
+          link: "http://",
+          content: "",
           img_url: "/img/calc.png"
         };
       }
@@ -63,8 +62,8 @@ export default {
     text-align: left;
     width: 72%;
     margin: 1%;
-    .el-row {
-      .el-col {
+    .b-row {
+      .b-col {
         display: inline-block;
         border-top: 1px;
         border-bottom: 1px;

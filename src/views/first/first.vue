@@ -12,8 +12,12 @@
 
             <p>贪多嚼不烂，什么都喜欢。写过前端vue.js，用过数据库PostgreSQL,MongoDB，引擎Unity,Cocos</p>
 
-            <b-button variant="primary" href="#">CSDN</b-button>
-            <b-button variant="success" href="#">简书</b-button>
+            <b-button variant="primary" class="mx-2" href="https://blog.csdn.net/henjuewang">CSDN</b-button>
+            <b-button
+              variant="success"
+              class="mx-2"
+              href="https://www.jianshu.com/u/2d95604f4b82"
+            >简书</b-button>
           </b-jumbotron>
         </b-col>
       </b-row>
