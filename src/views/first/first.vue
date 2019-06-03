@@ -6,35 +6,79 @@
           <b-jumbotron>
             <template slot="header">
               <!-- <b-img src="/img/bg.jpg" rounded="circle" alt="Circle image" width="200"></b-img> -->
-              <div>我是谁</div>
+              <div>{{$t('main.title')}}</div>
             </template>
 
-            <template slot="lead">杨旭，注册测绘师，测绘高级工程师，业余码农。</template>
+            <template slot="lead">{{$t('main.person')}}</template>
 
             <hr class="my-4">
 
-            <p>兴趣多而杂，什么都喜欢。前端vue.js，后台node.js、python、C#，数据库PostgreSQL,MongoDB，开发引擎Unity,Cocos</p>
+            <p>{{$t('main.content')}}</p>
 
             <b-button variant="primary" class="mx-2" href="https://blog.csdn.net/henjuewang">CSDN</b-button>
             <b-button
               variant="success"
               class="mx-2"
               href="https://www.jianshu.com/u/2d95604f4b82"
-            >简书</b-button>
+            >{{$t('main.jianshu')}}</b-button>
           </b-jumbotron>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col>
+          <b-card
+          no-body
+            header="文章"
+            img-src="/img/article.jpeg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 40rem;"
+            class="mb-2"
+          >
+            
+              
+              <b-list-group flush>
+  <b-list-group-item button>Button item</b-list-group-item>
+  <b-list-group-item button>I am a button</b-list-group-item>
+  <b-list-group-item button disabled>Disabled button</b-list-group-item>
+  <b-list-group-item button>This is a button too</b-list-group-item>
+</b-list-group>
+            <b-card-body>
+      Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum
+      consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
+      mollit voluptate est in duis laboris ad sit ipsum anim Lorem.
+    </b-card-body>
 
-      <soft v-for="x in mysoft" :soft="x" :key="x.id"/>
+            <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card
+            title="项目"
+            img-src="/img/soft.jpeg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 40rem;"
+            class="mb-2"
+          >
+            <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
+
+            <b-button href="#" variant="primary">Go somewhere</b-button>
+          </b-card>
+        </b-col>
+      </b-row>
+      <!-- <soft v-for="x in mysoft" :soft="x" :key="x.id"/> -->
     </b-container>
   </div>
 </template>
 
 <script>
-import soft from "./soft.vue";
+// import soft from "./soft.vue";
 export default {
   components: {
-    soft
+    // soft
   },
   data() {
     return {

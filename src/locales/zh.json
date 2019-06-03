@@ -7,12 +7,26 @@
     "article": "文章",
     "about": "关于",
     "app": "程序",
-    "lang": "Lang",
+    "lang": "Tanslation",
     "config": "管理",
     "me": "个人",
     "signout": "登出",
     "test": "测试",
     "search": "搜索",
     "keyword": "关键词"
+  },
+  "main":{
+    "title":"我是杨旭",
+    "person":"注册测绘师，测绘高级工程师，业余码农。",
+    "content":"兴趣多而杂，什么都喜欢。前端vue.js，后台node.js、python、C#，数据库PostgreSQL, MongoDB。",
+    "jianshu":"简书",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":""
+
+    
+
   }
 }

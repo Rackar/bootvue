@@ -7,12 +7,26 @@
     "article": "Article",
     "about": "About",
     "app": "App",
-    "lang": "Lang",
+    "lang": "Translation",
     "config": "Admin",
     "me": "my profile",
     "signout": "log out",
     "test": "Test",
     "search": "Search",
     "keyword": "Keyword"
+  },
+  "main":{
+    "title":"I am Yang Xu.",
+    "person":"Registered surveyor. Surveying and Mapping Senior Engineer. Coding lover.",
+    "content":"Front-end: vue.js，Back-end: node.js, python, C#. Database: PostgreSQL,MongoDB. Unity, Cocos. ",
+    "jianshu":"Jianshu",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":""
+
+    
+
   }
 }

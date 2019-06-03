@@ -21,7 +21,7 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit">{{$t('menu.search')}}</b-button>
           </b-nav-form>
 
-          <b-nav-item-dropdown text="Lang" right>
+          <b-nav-item-dropdown :text="$t('menu.lang')" right>
             <b-dropdown-item href="#" @click="changeLang('zh')">中文</b-dropdown-item>
             <b-dropdown-item href="#" @click="changeLang('en')">EN</b-dropdown-item>
           </b-nav-item-dropdown>
