@@ -29,6 +29,7 @@
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template slot="button-content">{{$t('menu.config')}}</template>
+            <b-dropdown-item to="/editor">{{$t('menu.addArticle')}}</b-dropdown-item>
             <b-dropdown-item href="#">{{$t('menu.me')}}</b-dropdown-item>
             <b-dropdown-item href="#">{{$t('menu.signout')}}</b-dropdown-item>
           </b-nav-item-dropdown>

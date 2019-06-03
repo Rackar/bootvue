@@ -33,7 +33,7 @@ export default new Router({
           // which is lazy-loaded when the route is visited.
           component: () =>
             import(
-              /* webpackChunkName: "first" */ "./views/article/article.vue"
+              /* webpackChunkName: "article" */ "./views/article/article.vue"
             )
         },
 
@@ -44,7 +44,7 @@ export default new Router({
           // this generates a separate chunk (about.[hash].js) for this route
           // which is lazy-loaded when the route is visited.
           component: () =>
-            import(/* webpackChunkName: "first" */ "./views/app/app.vue")
+            import(/* webpackChunkName: "myapp" */ "./views/app/app.vue")
         },
         {
           path: "person",
@@ -53,7 +53,16 @@ export default new Router({
           // this generates a separate chunk (about.[hash].js) for this route
           // which is lazy-loaded when the route is visited.
           component: () =>
-            import(/* webpackChunkName: "first" */ "./views/person/person.vue")
+            import(/* webpackChunkName: "person" */ "./views/person/person.vue")
+        },
+        {
+          path: "editor",
+          name: "editor",
+          // route level code-splitting
+          // this generates a separate chunk (about.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () =>
+            import(/* webpackChunkName: "editor" */ "./views/editor/editor.vue")
         }
       ]
     },
@@ -73,7 +82,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Home.vue")
+        import(/* webpackChunkName: "home" */ "./views/Home.vue")
     }
   ]
 });

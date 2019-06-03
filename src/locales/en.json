@@ -13,7 +13,8 @@
     "signout": "log out",
     "test": "Test",
     "search": "Search",
-    "keyword": "Keyword"
+    "keyword": "Keyword",
+    "addArticle":"New Article"
   },
   "main":{
     "title":"I am Yang Xu.",
