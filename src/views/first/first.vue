@@ -14,8 +14,9 @@
             <hr class="my-4">
 
             <p>{{$t('main.content')}}</p>
-
-            <b-button variant="primary" class="mx-2" href="https://blog.csdn.net/henjuewang">CSDN</b-button>
+            <b-button variant="primary" class="mx-2" href="https://github.com/Rackar">Github</b-button>
+            <b-button variant="primary" class="mx-2" href="https://gitee.com/rackar/">Gitee</b-button>
+            <b-button variant="success" class="mx-2" href="https://blog.csdn.net/henjuewang">CSDN</b-button>
             <b-button
               variant="success"
               class="mx-2"
@@ -27,35 +28,46 @@
       <b-row>
         <b-col>
           <b-card
-          no-body
-            header="文章"
+            no-body
+            header="技术文章"
             img-src="/img/article.jpeg"
             img-alt="Image"
             img-top
             tag="article"
             style="max-width: 40rem;"
-            class="mb-2"
+            class="mb-5"
           >
-            
-              
-              <b-list-group flush>
-  <b-list-group-item button>Button item</b-list-group-item>
-  <b-list-group-item button>I am a button</b-list-group-item>
-  <b-list-group-item button disabled>Disabled button</b-list-group-item>
-  <b-list-group-item button>This is a button too</b-list-group-item>
-</b-list-group>
+            <b-list-group flush>
+              <b-list-group-item button>Button item</b-list-group-item>
+              <b-list-group-item button>I am a button</b-list-group-item>
+              <b-list-group-item button disabled>Disabled button</b-list-group-item>
+              <b-list-group-item button>This is a button too</b-list-group-item>
+            </b-list-group>
             <b-card-body>
-      Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum
-      consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
-      mollit voluptate est in duis laboris ad sit ipsum anim Lorem.
-    </b-card-body>
+              Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum
+              consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
+              mollit voluptate est in duis laboris ad sit ipsum anim Lorem.
+            </b-card-body>
 
             <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
+          </b-card>
+          <b-card
+            title="开源项目"
+            img-src="/img/soft.jpeg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 40rem;"
+            class="mb-5"
+          >
+            <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
+
+            <b-button href="#" variant="primary">Go somewhere</b-button>
           </b-card>
         </b-col>
         <b-col>
           <b-card
-            title="项目"
+            title="商业项目"
             img-src="/img/soft.jpeg"
             img-alt="Image"
             img-top
@@ -66,6 +78,30 @@
             <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
 
             <b-button href="#" variant="primary">Go somewhere</b-button>
+          </b-card>
+          <b-card
+            no-body
+            header="其他文章"
+            img-src="/img/article.jpeg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 40rem;"
+            class="mb-2 mt-5"
+          >
+            <b-list-group flush>
+              <b-list-group-item button>Button item</b-list-group-item>
+              <b-list-group-item button>I am a button</b-list-group-item>
+              <b-list-group-item button disabled>Disabled button</b-list-group-item>
+              <b-list-group-item button>This is a button too</b-list-group-item>
+            </b-list-group>
+            <b-card-body>
+              Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum
+              consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
+              mollit voluptate est in duis laboris ad sit ipsum anim Lorem.
+            </b-card-body>
+
+            <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
           </b-card>
         </b-col>
       </b-row>
